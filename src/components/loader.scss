@@ -1,0 +1,46 @@
+$grey: rgb(85, 85, 85);
+
+.loader {
+  animation: load1 1s infinite ease-in-out;
+  animation-delay: -.16s;
+  background: $grey;
+  color: rgb(85, 85, 85);
+  font-size: 11px;
+  height: 4em;
+  margin: 88px auto;
+  position: relative;
+  text-indent: -9999em;
+  transform: translateZ(0);
+  width: 1em;
+  &:before,
+  &:after {
+    animation: load1 1s infinite ease-in-out;
+    background: $grey;
+    content: '';
+    height: 4em;
+    position: absolute;
+    top: 0;
+    width: 1em;
+  }
+  &:before {
+    animation-delay: -.32s;
+    left: -1.5em;
+  }
+  &:after {
+    left: 1.5em;
+  }
+}
+
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "name": "frontend-recruitment-test",
+  "description": "",
+  "version": "2.0.0",
+  "main": "dist/index.js",
+  "license": "unlicensed",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "jest": "^24.8.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-hot-loader": "^4.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^5.0.11",
+    "@storybook/addon-links": "^5.0.11",
+    "@storybook/addons": "^5.0.11",
+    "@storybook/cli": "^5.0.11",
+    "@storybook/react": "^5.0.11",
+    "@storybook/theming": "latest",
+    "autoprefixer": "^9.6.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
+    "core-js": "^3.1.3",
+    "eslint": "^5.16.0",
+    "eslint-config-tailored-tunes": "^3.0.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-jest": "^22.6.4",
+    "eslint-plugin-react": "^7.13.0",
+    "html-webpack-plugin": "^3.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "stylelint": "^10.0.1",
+    "stylelint-order": "^3.0.0",
+    "stylelint-scss": "^3.8.0",
+    "stylelint-webpack-plugin": "^0.10.5",
+    "terser-webpack-plugin": "^1.3.0",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.5.1",
+    "yarn": "^1.16.0"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.scss$": "identity-obj-proxy"
+    },
+    "transform": {
+      "\\.js(x)?$": "babel-jest",
+      "^.+\\.(css|scss)$": "<rootDir>/testUtils/cssTransform.js"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json"
+    ],
+    "testMatch": [
+      "**/?(*.)test.js?(x)"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/*/*.stories.jsx",
+      "!**/stories/**"
+    ]
+  }
+}

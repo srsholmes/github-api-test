@@ -1,0 +1,41 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "tailored-tunes"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "jest/globals": true
+  },
+  "rules": {
+    "max-nested-callbacks": [
+      "error",
+      4
+    ],
+    "no-console": 1,
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ],
+    "prefer-const": 2,
+    "react/jsx-uses-vars": 2,
+    "complexity": [
+      "error",
+      {
+        "max": 8
+      }
+    ],
+    "react/jsx-uses-react": "error"
+  },
+  "plugins": [
+    "react",
+    "jest"
+  ]
+}
