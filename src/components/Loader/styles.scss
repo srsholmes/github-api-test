@@ -7,9 +7,12 @@ $grey: rgb(85, 85, 85);
   color: rgb(85, 85, 85);
   font-size: 11px;
   height: 4em;
+  left: 0;
   margin: 88px auto;
-  position: relative;
+  position: absolute;
+  right: 0 ;
   text-indent: -9999em;
+  top: 40px;
   transform: translateZ(0);
   width: 1em;
   &:before,

@@ -1,5 +1,12 @@
 .avatar {
-  border: 5px solid rgb(0, 0, 0);
-  border-radius: 30px;
-  max-width: 300px;
+  border: 2px solid black;
+  border-radius: 4rem;
+  margin-right: 1rem;
+  max-width: 70px;
+}
+
+.result {
+  align-items: center;
+  display: flex;
+  margin-bottom: 1rem;
 }

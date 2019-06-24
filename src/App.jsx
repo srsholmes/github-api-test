@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import styles from './App.scss';
 import {SearchResults} from './components/SearchResults';
 import {SearchInput} from './components/SearchInput';
 import {useDebounce} from './hooks/debounce';
@@ -10,9 +11,14 @@ const App = () => {
   const [results, setResults] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const debouncedSearchTerm = useDebounce(searchInput, 500);
+
+  const setInputAndLoader = e => {
+    setSearchInput(e.target.value);
+    setIsLoading(true);
+  };
+
   useEffect(() => {
     if (debouncedSearchTerm) {
-      setIsLoading(true);
       searchUser(debouncedSearchTerm).then(x => {
         setResults(x);
         setIsLoading(false);
@@ -23,11 +29,13 @@ const App = () => {
   }, [debouncedSearchTerm]);
   console.log({isLoading});
   return (
-    <>
-      <SearchInput setInput={setSearchInput} value={searchInput} />
+    <div className={styles.wrapper}>
+      <SearchInput setInput={setInputAndLoader} value={searchInput} />
       {isLoading && <Loader />}
-      <SearchResults results={results} />
-    </>
+      {!isLoading && searchInput.length > 0 && (
+        <SearchResults results={results} />
+      )}
+    </div>
   );
 };
 
