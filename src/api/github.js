@@ -14,7 +14,8 @@ const SEARCH_USERS = `
         node {
           ... on User {
             avatarUrl,
-            name
+            name,
+            login
           }
         }
       }
