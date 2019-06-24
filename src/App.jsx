@@ -1,9 +1,12 @@
 import React, {useState} from 'react';
+import {useDebounce} from './hooks/debounce';
 import {Loader} from './components/loader';
 
 const App = () => {
   const [searchInput, changeInput] = useState('');
   const [results, setResults] = useState([]);
+  const debouncedSearchTerm = useDebounce(searchInput, 500);
+  console.log({debouncedSearchTerm});
   const setSearchInput = (e) => {
     changeInput(e.target.value);
   };
