@@ -2,9 +2,8 @@ import React from 'react';
 import styles from './styles.scss';
 /* eslint-disable no-ternary */
 export const SearchResults = ({results}) => {
-  console.log({results});
   return (
-    <ul>
+    <ul className={styles.wrapper}>
       {results.length ? (
         results.map(({node}) => (
           <li className={styles.result}>

@@ -24,10 +24,11 @@ const App = () => {
         setIsLoading(false);
       });
     } else {
+      setIsLoading(false);
       setResults([]);
     }
   }, [debouncedSearchTerm]);
-  console.log({isLoading});
+
   return (
     <div className={styles.wrapper}>
       <SearchInput setInput={setInputAndLoader} value={searchInput} />
