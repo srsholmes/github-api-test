@@ -6,7 +6,7 @@ export const SearchResults = ({results}) => {
     <ul className={styles.wrapper}>
       {results.length ? (
         results.map(({node}) => (
-          <li className={styles.result}>
+          <li key={node.avatarUrl} className={styles.result}>
             <img className={styles.avatar} src={node.avatarUrl} alt={node.name} />
             <p className={styles.name}>{node.name}</p>
           </li>
