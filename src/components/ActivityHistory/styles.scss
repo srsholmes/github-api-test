@@ -4,8 +4,21 @@
 }
 
 .repo {
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
   list-style: none;
+  margin: 1rem;
+  padding: .5rem;
+  width: 100%;
 }
+
 .repoName {
   font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.activityWrapper {
+  padding: 0;
 }
