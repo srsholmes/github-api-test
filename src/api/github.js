@@ -35,6 +35,7 @@ export const ACTIVITY = `
           commitContributionsByRepository(maxRepositories:10) {
             repository {
               name,
+              url
             }
             contributions(first:5) {
               edges {

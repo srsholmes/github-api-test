@@ -17,7 +17,6 @@ exports[`ActivityHistory displays the activities with the contributions 1`] = `
         class="repoName"
       >
         <a
-          href="http://github.com/undefined/progit2"
           target="_blank"
         >
           progit2
@@ -88,7 +87,6 @@ exports[`ActivityHistory displays the activities with the contributions 1`] = `
         class="repoName"
       >
         <a
-          href="http://github.com/undefined/progit2-bg"
           target="_blank"
         >
           progit2-bg
@@ -159,7 +157,6 @@ exports[`ActivityHistory displays the activities with the contributions 1`] = `
         class="repoName"
       >
         <a
-          href="http://github.com/undefined/ben.github.com"
           target="_blank"
         >
           ben.github.com

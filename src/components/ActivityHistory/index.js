@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.scss';
 
-export const ActivityHistory = ({activity, username}) => {
+export const ActivityHistory = ({activity}) => {
   if (activity.length === 0) {
     return (
       <h4 data-testid="no-activity" className={styles.title}>
@@ -18,10 +18,7 @@ export const ActivityHistory = ({activity, username}) => {
             return (
               <li key={i} className={styles.repo}>
                 <p className={styles.repoName}>
-                  <a
-                    target={'_blank'}
-                    href={`http://github.com/${username}/${x.repository.name}`}
-                  >
+                  <a target={'_blank'} href={x.repository.url}>
                     {x.repository.name}
                   </a>
                 </p>
