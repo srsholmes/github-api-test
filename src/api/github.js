@@ -39,6 +39,7 @@ const ACTIVITY = `
             contributions(first:5) {
               edges {
                 node {
+                  url
                   occurredAt
                 }
               }

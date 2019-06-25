@@ -18,10 +18,14 @@ export const ActivityHistory = ({activity, username}) => {
                 </a>
               </p>
               <p>Commit History Times:</p>
-              <ul>
-                {x.contributions.edges.map(({node: {occurredAt}}, j) => (
-                  <li key={j}>{occurredAt}</li>
-                ))}
+              <ul className={styles.commitsWrapper}>
+                {x.contributions.edges.map(
+                  ({node: {occurredAt, url}}, j) => (
+                    <li className={styles.commitTime} key={j}>
+                      <a target="_blank" href={url}>{occurredAt}</a>
+                    </li>
+                  )
+                )}
               </ul>
             </li>
           );
