@@ -5,18 +5,14 @@ import {getUserActivity} from '../../api/github';
 
 /* eslint-disable no-ternary */
 export const SearchResults = ({results}) => {
-  // eslint-disable-next-line no-unused-vars
-  const [isLoading, setIsLoading] = useState(false);
   const [userActivity, setUserActivity] = useState({});
   const [selectedUser, setSelectedUser] = useState('');
   useEffect(() => {
     if (selectedUser) {
       getUserActivity(selectedUser).then(x => {
         setUserActivity({...userActivity, [selectedUser]: x});
-        setIsLoading(false);
       });
     } else {
-      setIsLoading(false);
       setUserActivity([]);
     }
   }, [selectedUser]);
@@ -36,22 +32,22 @@ export const SearchResults = ({results}) => {
                 <span className={styles.title}>{'Username:'}</span>
                 <span>{login}</span>
               </div>
-              {/* eslint-disable-next-line no-unused-vars */}
-              {
-                !userActivity[login] && <button onClick={() => setSelectedUser(login)}>
+              {!userActivity[login] && (
+                <button onClick={() => setSelectedUser(login)}>
                   Get User Activity
                 </button>
-              }
+              )}
               {userActivity[login] && (
-                <ActivityHistory activity={userActivity[login]} />
+                <ActivityHistory
+                  username={login}
+                  activity={userActivity[login]}
+                />
               )}
             </div>
           </li>
         ))
       ) : (
-        <h3 className={styles.error}>
-          No results found, please try a different search term
-        </h3>
+        <p>No results found, please try a different search term</p>
       )}
     </ul>
   );

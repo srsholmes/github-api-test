@@ -1,15 +1,22 @@
 import React from 'react';
 import styles from './styles.scss';
 
-export const ActivityHistory = ({activity}) => {
+export const ActivityHistory = ({activity, username}) => {
   return (
     <>
       <h4 className={styles.title}>Recent commit activity:</h4>
       <ul className={styles.activityWrapper}>
-        {activity.map((x) => {
+        {activity.map(x => {
           return (
             <li className={styles.repo}>
-              <p className={styles.repoName}>{x.repository.name}</p>
+              <p className={styles.repoName}>
+                <a
+                  target={'_blank'}
+                  href={`http://github.com/${username}/${x.repository.name}`}
+                >
+                  {x.repository.name}
+                </a>
+              </p>
               <p>Commit Times:</p>
               <ul>
                 {x.contributions.edges.map(({node: {occurredAt}}, j) => (
