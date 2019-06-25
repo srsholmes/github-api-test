@@ -57,6 +57,6 @@ I was a bit unsure regarding the third user story. In a workplace environment I 
 I changed the theme to light as the dark theme is not a true representation of the App I have made.
 
 ## Lint / Stylelint rules
-I enabled console logs for debugging, with a warning. This can be detected in a pre-commit hook or on CI. 
+I enabled console logs for debugging, with a warning. This can be detected in a pre-commit hook or on CI to prevent leaking into develop / master branches.
 
-I kept the other lint rules the same, but feel like there should a discussion regarding some of them. 
+I kept the other lint rules the same, but I would definitely feel like there should a discussion regarding some of them in order to keep code quality high and developers sane.
