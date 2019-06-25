@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   list-style: none;
-  margin: 1rem;
+  margin: 1rem 0;
   padding: .5rem;
   width: 100%;
 }
@@ -21,4 +21,5 @@
 
 .activityWrapper {
   padding: 0;
+  width: 100%;
 }
