@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchResults displays results when there are results 1`] = `
+<div>
+  <ul
+    class="wrapper"
+  >
+    <li
+      class="result"
+    >
+      <img
+        alt="Ben Straub"
+        class="avatar"
+        src="https://avatars3.githubusercontent.com/u/39902?v=4"
+      />
+      <div
+        class="infoWrapper"
+      >
+        <div
+          class="info"
+        >
+          <span
+            class="title"
+          >
+            Name:
+          </span>
+          <span>
+            Ben Straub
+          </span>
+        </div>
+        <div
+          class="info"
+        >
+          <span
+            class="title"
+          >
+            Username:
+          </span>
+          <span>
+            ben
+          </span>
+        </div>
+        <button
+          data-testid="test-get-activity"
+        >
+          Get User Activity
+        </button>
+      </div>
+    </li>
+    <li
+      class="result"
+    >
+      <img
+        alt="Ben Balter"
+        class="avatar"
+        src="https://avatars3.githubusercontent.com/u/282759?v=4"
+      />
+      <div
+        class="infoWrapper"
+      >
+        <div
+          class="info"
+        >
+          <span
+            class="title"
+          >
+            Name:
+          </span>
+          <span>
+            Ben Balter
+          </span>
+        </div>
+        <div
+          class="info"
+        >
+          <span
+            class="title"
+          >
+            Username:
+          </span>
+          <span>
+            benbalter
+          </span>
+        </div>
+        <button
+          data-testid="test-get-activity"
+        >
+          Get User Activity
+        </button>
+      </div>
+    </li>
+    <li
+      class="result"
+    >
+      <img
+        alt="Ben Newman"
+        class="avatar"
+        src="https://avatars0.githubusercontent.com/u/5750?v=4"
+      />
+      <div
+        class="infoWrapper"
+      >
+        <div
+          class="info"
+        >
+          <span
+            class="title"
+          >
+            Name:
+          </span>
+          <span>
+            Ben Newman
+          </span>
+        </div>
+        <div
+          class="info"
+        >
+          <span
+            class="title"
+          >
+            Username:
+          </span>
+          <span>
+            benjamn
+          </span>
+        </div>
+        <button
+          data-testid="test-get-activity"
+        >
+          Get User Activity
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`SearchResults displays the message when there are no results 1`] = `
+<div>
+  <ul
+    class="wrapper"
+  >
+    <p>
+      No results found, please try a different search term
+    </p>
+  </ul>
+</div>
+`;

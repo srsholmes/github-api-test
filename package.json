@@ -56,6 +56,9 @@
     "webpack-dev-server": "^3.5.1",
     "yarn": "^1.16.0"
   },
+  "prettier": {
+    "singleQuote": true
+  },
   "jest": {
     "moduleNameMapper": {
       "\\.scss$": "identity-obj-proxy"

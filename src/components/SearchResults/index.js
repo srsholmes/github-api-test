@@ -34,7 +34,7 @@ export const SearchResults = ({results}) => {
                   <span>{login}</span>
                 </div>
                 {!userActivity[login] && (
-                  <button onClick={() => setSelectedUser(login)}>
+                  <button data-testid="test-get-activity" onClick={() => setSelectedUser(login)}>
                     Get User Activity
                   </button>
                 )}
