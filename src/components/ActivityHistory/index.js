@@ -3,7 +3,7 @@ import styles from './styles.scss';
 
 export const ActivityHistory = ({activity, username}) => {
   if (activity.length === 0) {
-    return <h4 className={styles.title}>No Activity Found</h4>;
+    return <h4 data-testid="no-activity" className={styles.title}>No Activity Found</h4>;
   }
   return (
     <>

@@ -1,13 +1,13 @@
 import axios from 'axios';
 
-const githubGraphQL = axios.create({
+export const GITHUB_URL_AND_HEADERS = {
   baseURL: 'https://api.github.com/graphql',
   headers: {
     Authorization: `bearer ${process.env.GITHUB_PERSONAL_ACCESS_TOKEN}`
   }
-});
+};
 
-const SEARCH_USERS = `
+export const SEARCH_USERS = `
   query ($user: String!) {
     search(query: $user, type: USER, first: 10) {
       edges {
@@ -23,7 +23,7 @@ const SEARCH_USERS = `
   }
 `;
 
-const ACTIVITY = `
+export const ACTIVITY = `
   query ($user: String!) {
     repositoryOwner(login: $user) {
       ... on User {
@@ -52,17 +52,27 @@ const ACTIVITY = `
 `;
 
 export const searchUser = async val => {
-  const res = await githubGraphQL.post('', {
-    query: SEARCH_USERS,
-    variables: {user: val}
+  const res = await axios({
+    method: 'POST',
+    url: GITHUB_URL_AND_HEADERS.baseURL,
+    headers: GITHUB_URL_AND_HEADERS.headers,
+    data: {
+      query: SEARCH_USERS,
+      variables: {user: val}
+    }
   });
   return res.data.data.search.edges;
 };
 
 export const getUserActivity = async val => {
-  const res = await githubGraphQL.post('', {
-    query: ACTIVITY,
-    variables: {user: val}
+  const res = await axios({
+    method: 'POST',
+    url: GITHUB_URL_AND_HEADERS.baseURL,
+    headers: GITHUB_URL_AND_HEADERS.headers,
+    data: {
+      query: ACTIVITY,
+      variables: {user: val}
+    }
   });
   return res.data.data.repositoryOwner.contributionsCollection
     .commitContributionsByRepository;

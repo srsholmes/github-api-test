@@ -12,6 +12,7 @@ export const SearchInput = ({value, setInput}) => {
     <>
       <h3 className={styles.title}>Please search for a Github User:</h3>
       <input
+        data-testid="search-input"
         ref={inputRef}
         className={styles.input}
         type="text"
