@@ -34,7 +34,21 @@ __User Story__
 
 *So that:* I can understand their commit history.
 
+## Github GraphQL API / Personal Access Tokens
 
+In order to use the Github api v4 you will need a github personal access token. Please refer to the docs [here.]('https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line)
 
+This token should be placed in a `.env` file in the format as shown in the `.env.example`
 
+The Personal Access token is injected in at runtime by webpack using the `new Dotenv()` plugin.
 
+## Unit tests
+
+Run unit tests using `npm run test` or `npm run test-coverage` for a test coverage report.
+
+Documentation for react testing library can be found [here.](https://testing-library.com/docs/react-testing-library/intro)
+
+I have chosen to use react testing library as i think it's a nice way to test react components with react hooks, and is slightly easier to use than Enzyme. 
+
+## User Story requirements
+I was a bit unsure regarding the third user story. In a workplace environment I would have asked for more information as to what was exactly required. In the absence of this I have opted to link to the users activity on github rather than try and display their activity on the page on a per repo basis. Hopefully that is ok :).

@@ -3,16 +3,20 @@ import styles from './styles.scss';
 
 export const ActivityHistory = ({activity, username}) => {
   if (activity.length === 0) {
-    return <h4 data-testid="no-activity" className={styles.title}>No Activity Found</h4>;
+    return (
+      <h4 data-testid="no-activity" className={styles.title}>
+        No Activity Found
+      </h4>
+    );
   }
   return (
     <>
       <h4 className={styles.title}>Recent commit activity:</h4>
       <ul className={styles.activityWrapper}>
         {activity.length > 0
-          && activity.map(x => {
+          && activity.map((x, i) => {
             return (
-              <li className={styles.repo}>
+              <li key={i} className={styles.repo}>
                 <p className={styles.repoName}>
                   <a
                     target={'_blank'}

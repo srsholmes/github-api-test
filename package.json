@@ -79,7 +79,8 @@
       "src/**/*.{js,jsx}",
       "!**/node_modules/**",
       "!**/*/*.stories.jsx",
-      "!**/stories/**"
+      "!**/stories/**",
+      "!src/index.jsx"
     ]
   }
 }
