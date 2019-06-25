@@ -11,7 +11,7 @@ import {
 jest.mock('axios');
 
 describe('Github API', () => {
-  it('GITHUB_URL_AND_HEADERS creates a new axios instance with the correct headers', () => {
+  it('GITHUB_URL_AND_HEADERS has the correct URL and headers info', () => {
     expect(GITHUB_URL_AND_HEADERS).toStrictEqual({
       baseURL: 'https://api.github.com/graphql',
       headers: {
