@@ -44,6 +44,9 @@ This token should be placed in a `.env` file in the format as shown in the `.env
 
 The Personal Access token is injected in at runtime by webpack using the `new Dotenv()` plugin.
 
+### Folder structure
+I opted to have a components folder with each component in their own folder. I know this isn't everyones cup of tea and have seen it done many different ways. I opted for this route to keep the components self contained with their styles and tests. If i were using Styled Components I probably wouldnt choose this folder structure.
+
 ### Unit tests
 
 Run unit tests using `npm run test` or `npm run test-coverage` for a test coverage report.
