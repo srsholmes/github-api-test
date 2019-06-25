@@ -52,3 +52,11 @@ I have chosen to use react testing library as i think it's a nice way to test re
 
 ## User Story requirements
 I was a bit unsure regarding the third user story. In a workplace environment I would have asked for more information as to what was exactly required. In the absence of this I have opted to link to the users activity on github rather than try and display their activity on the page on a per repo basis. Hopefully that is ok :).
+
+## Storybook
+I changed the theme to light as the dark theme is not a true representation of the App I have made.
+
+## Lint / Stylelint rules
+I enabled console logs for debugging, with a warning. This can be detected in a pre-commit hook or on CI. 
+
+I kept the other lint rules the same, but feel like there should a discussion regarding some of them. 

@@ -5,7 +5,7 @@ exports[`ActivityHistory displays the activities with the contributions 1`] = `
   <h4
     class="title"
   >
-    Commit activity:
+    Recent repo activity:
   </h4>
   <ul
     class="activityWrapper"
@@ -24,7 +24,7 @@ exports[`ActivityHistory displays the activities with the contributions 1`] = `
         </a>
       </p>
       <p>
-        Recent Commit History Dates:
+        Commit History Dates:
       </p>
       <ul
         class="commitsWrapper"
@@ -95,7 +95,7 @@ exports[`ActivityHistory displays the activities with the contributions 1`] = `
         </a>
       </p>
       <p>
-        Recent Commit History Dates:
+        Commit History Dates:
       </p>
       <ul
         class="commitsWrapper"
@@ -166,7 +166,7 @@ exports[`ActivityHistory displays the activities with the contributions 1`] = `
         </a>
       </p>
       <p>
-        Recent Commit History Dates:
+        Commit History Dates:
       </p>
       <ul
         class="commitsWrapper"

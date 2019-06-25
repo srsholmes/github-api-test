@@ -1,6 +1,6 @@
 {
   "name": "frontend-recruitment-test",
-  "description": "",
+  "description": "A Github API search API app",
   "version": "2.0.0",
   "main": "dist/index.js",
   "license": "unlicensed",

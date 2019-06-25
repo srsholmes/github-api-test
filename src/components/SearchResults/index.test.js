@@ -1,7 +1,7 @@
 import React from 'react';
 import {render, getAllByTestId, fireEvent} from '@testing-library/react';
 import {SearchResults} from './index';
-
+import {MOCK_RESULTS} from '../../../testUtils/mockData';
 import * as dependency from '../../api/github';
 
 jest.mock('../../api/github', () => ({
@@ -9,30 +9,6 @@ jest.mock('../../api/github', () => ({
 }));
 
 describe('SearchResults', () => {
-  const MOCK_RESULTS = [
-    {
-      node: {
-        avatarUrl: 'https://avatars3.githubusercontent.com/u/39902?v=4',
-        name: 'Ben Straub',
-        login: 'ben'
-      }
-    },
-    {
-      node: {
-        avatarUrl: 'https://avatars3.githubusercontent.com/u/282759?v=4',
-        name: 'Ben Balter',
-        login: 'benbalter'
-      }
-    },
-    {
-      node: {
-        avatarUrl: 'https://avatars0.githubusercontent.com/u/5750?v=4',
-        name: 'Ben Newman',
-        login: 'benjamn'
-      }
-    }
-  ];
-
   it('displays the message when there are no results', () => {
     const {container} = render(<SearchResults results={[]} />);
     expect(container).toMatchSnapshot();

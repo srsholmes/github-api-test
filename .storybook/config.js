@@ -1,5 +1,5 @@
-import {addParameters, configure} from '@storybook/react';
-import {themes} from '@storybook/theming';
+import { addParameters, configure } from '@storybook/react';
+import { themes } from '@storybook/theming';
 
 // automatically import all files ending in *.stories.js
 const req = require.context('../stories', true, /\.stories\.js$/);
@@ -10,7 +10,8 @@ function loadStories() {
 
 addParameters({
   options: {
-    theme: themes.dark,
-  },
+    theme: themes.light
+  }
 });
+
 configure(loadStories, module);
