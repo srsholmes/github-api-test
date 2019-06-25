@@ -34,7 +34,7 @@ export const App = () => {
       <SearchInput setInput={setInputAndLoader} value={searchInput} />
       {isLoading && <Loader />}
       {!isLoading && searchInput.length > 0 && (
-        <SearchResults results={results} />
+        <SearchResults  results={results} />
       )}
     </div>
   );

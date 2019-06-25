@@ -19,3 +19,137 @@ exports[`App App 1`] = `
   </div>
 </div>
 `;
+
+exports[`App App 2`] = `
+<ul
+  class="wrapper"
+  data-testid="user-results"
+>
+  <li
+    class="result"
+  >
+    <img
+      alt="Ben Straub"
+      class="avatar"
+      src="https://avatars3.githubusercontent.com/u/39902?v=4"
+    />
+    <div
+      class="infoWrapper"
+    >
+      <div
+        class="info"
+      >
+        <span
+          class="title"
+        >
+          Name:
+        </span>
+        <span>
+          Ben Straub
+        </span>
+      </div>
+      <div
+        class="info"
+      >
+        <span
+          class="title"
+        >
+          Username:
+        </span>
+        <span>
+          ben
+        </span>
+      </div>
+      <button
+        data-testid="test-get-activity"
+      >
+        Get User Activity
+      </button>
+    </div>
+  </li>
+  <li
+    class="result"
+  >
+    <img
+      alt="Ben Balter"
+      class="avatar"
+      src="https://avatars3.githubusercontent.com/u/282759?v=4"
+    />
+    <div
+      class="infoWrapper"
+    >
+      <div
+        class="info"
+      >
+        <span
+          class="title"
+        >
+          Name:
+        </span>
+        <span>
+          Ben Balter
+        </span>
+      </div>
+      <div
+        class="info"
+      >
+        <span
+          class="title"
+        >
+          Username:
+        </span>
+        <span>
+          benbalter
+        </span>
+      </div>
+      <button
+        data-testid="test-get-activity"
+      >
+        Get User Activity
+      </button>
+    </div>
+  </li>
+  <li
+    class="result"
+  >
+    <img
+      alt="Ben Newman"
+      class="avatar"
+      src="https://avatars0.githubusercontent.com/u/5750?v=4"
+    />
+    <div
+      class="infoWrapper"
+    >
+      <div
+        class="info"
+      >
+        <span
+          class="title"
+        >
+          Name:
+        </span>
+        <span>
+          Ben Newman
+        </span>
+      </div>
+      <div
+        class="info"
+      >
+        <span
+          class="title"
+        >
+          Username:
+        </span>
+        <span>
+          benjamn
+        </span>
+      </div>
+      <button
+        data-testid="test-get-activity"
+      >
+        Get User Activity
+      </button>
+    </div>
+  </li>
+</ul>
+`;

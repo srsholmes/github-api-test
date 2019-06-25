@@ -4,6 +4,7 @@ exports[`SearchResults displays results when there are results 1`] = `
 <div>
   <ul
     class="wrapper"
+    data-testid="user-results"
   >
     <li
       class="result"
@@ -139,6 +140,7 @@ exports[`SearchResults displays the message when there are no results 1`] = `
 <div>
   <ul
     class="wrapper"
+    data-testid="user-results"
   >
     <p>
       No results found, please try a different search term

@@ -18,7 +18,7 @@ export const SearchResults = ({results}) => {
   }, [selectedUser]);
 
   return (
-    <ul className={styles.wrapper}>
+    <ul data-testid="user-results" className={styles.wrapper}>
       {results.length ? (
         results.map(({node: {name, avatarUrl, login}}) => (
           <li key={avatarUrl} className={styles.result}>
