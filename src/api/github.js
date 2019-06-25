@@ -55,7 +55,6 @@ export const searchUser = async val => {
     query: SEARCH_USERS,
     variables: {user: val}
   });
-  console.log({res});
   return res.data.data.search.edges;
 };
 

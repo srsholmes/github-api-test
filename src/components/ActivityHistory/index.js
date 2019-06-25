@@ -17,7 +17,7 @@ export const ActivityHistory = ({activity, username}) => {
                   {x.repository.name}
                 </a>
               </p>
-              <p>Commit Times:</p>
+              <p>Commit History Times:</p>
               <ul>
                 {x.contributions.edges.map(({node: {occurredAt}}, j) => (
                   <li key={j}>{occurredAt}</li>
