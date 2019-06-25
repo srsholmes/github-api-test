@@ -11,7 +11,7 @@ export const ActivityHistory = ({activity, username}) => {
   }
   return (
     <>
-      <h4 className={styles.title}>Commit activity:</h4>
+      <h4 className={styles.title}>Recent repo activity:</h4>
       <ul className={styles.activityWrapper}>
         {activity.length > 0
           && activity.map((x, i) => {
@@ -25,7 +25,7 @@ export const ActivityHistory = ({activity, username}) => {
                     {x.repository.name}
                   </a>
                 </p>
-                <p>Recent Commit History Dates:</p>
+                <p>Commit History Dates:</p>
                 <ul className={styles.commitsWrapper}>
                   {x.contributions.edges.length > 0
                     && x.contributions.edges.map(
