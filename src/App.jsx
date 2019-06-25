@@ -6,7 +6,7 @@ import {useDebounce} from './hooks/debounce';
 import {Loader} from './components/Loader';
 import {searchUser} from './api/github';
 
-const App = () => {
+export const App = () => {
   const [searchInput, setSearchInput] = useState('');
   const [results, setResults] = useState([]);
   const [isLoading, setIsLoading] = useState(false);

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App App 1`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <h3
+      class="title"
+    >
+      Please search for a Github User:
+    </h3>
+    <input
+      class="input"
+      data-testid="search-input"
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
