@@ -53,28 +53,36 @@ export const ACTIVITY = `
 `;
 
 export const searchUser = async val => {
-  const res = await axios({
-    method: 'POST',
-    url: GITHUB_URL_AND_HEADERS.baseURL,
-    headers: GITHUB_URL_AND_HEADERS.headers,
-    data: {
-      query: SEARCH_USERS,
-      variables: {user: val}
-    }
-  });
-  return res.data.data.search.edges;
+  try {
+    const res = await axios({
+      method: 'POST',
+      url: GITHUB_URL_AND_HEADERS.baseURL,
+      headers: GITHUB_URL_AND_HEADERS.headers,
+      data: {
+        query: SEARCH_USERS,
+        variables: {user: val}
+      }
+    });
+    return res.data.data.search.edges;
+  } catch (err) {
+    throw new Error('Error from Github API');
+  }
 };
 
 export const getUserActivity = async val => {
-  const res = await axios({
-    method: 'POST',
-    url: GITHUB_URL_AND_HEADERS.baseURL,
-    headers: GITHUB_URL_AND_HEADERS.headers,
-    data: {
-      query: ACTIVITY,
-      variables: {user: val}
-    }
-  });
-  return res.data.data.repositoryOwner.contributionsCollection
-    .commitContributionsByRepository;
+  try {
+    const res = await axios({
+      method: 'POST',
+      url: GITHUB_URL_AND_HEADERS.baseURL,
+      headers: GITHUB_URL_AND_HEADERS.headers,
+      data: {
+        query: ACTIVITY,
+        variables: {user: val}
+      }
+    });
+    return res.data.data.repositoryOwner.contributionsCollection
+      .commitContributionsByRepository;
+  } catch (err) {
+    throw new Error('Error from Github API');
+  }
 };

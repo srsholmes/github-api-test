@@ -44,7 +44,7 @@ describe('Github API', () => {
   });
 
   it('getUserActivity is called with the correct params', async () => {
-    const MOCK_USER_RESPONSE = {
+    const MOCK_ACTIVITY_RESPONSE = {
       data: {
         repositoryOwner: {
           contributionsCollection: {
@@ -54,7 +54,7 @@ describe('Github API', () => {
       }
     };
     mockAxios.mockImplementationOnce(() =>
-      Promise.resolve({data: MOCK_USER_RESPONSE})
+      Promise.resolve({data: MOCK_ACTIVITY_RESPONSE})
     );
     await getUserActivity('testUser');
     expect(mockAxios).toHaveBeenCalledWith({
@@ -66,5 +66,30 @@ describe('Github API', () => {
       method: 'POST',
       url: 'https://api.github.com/graphql'
     });
+  });
+
+  it('searchUser will throw an error if axios errors', async () => {
+    const MOCK_BROKEN_ACTIVITY_RESPONSE = {
+      data: {
+        brokenData: {}
+      }
+    };
+    mockAxios.mockImplementationOnce(() =>
+      Promise.resolve({data: MOCK_BROKEN_ACTIVITY_RESPONSE})
+    );
+    try {
+      await searchUser('testUser');
+    } catch (err) {
+      expect(err.message).toEqual('Error from Github API');
+    }
+  });
+
+  it('getUserActivity will throw an error if axios errors', async () => {
+    mockAxios.mockImplementationOnce(() => Promise.resolve({data: {}}));
+    try {
+      await getUserActivity('testUser');
+    } catch (err) {
+      expect(err.message).toEqual('Error from Github API');
+    }
   });
 });

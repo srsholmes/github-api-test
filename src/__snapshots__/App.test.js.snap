@@ -153,3 +153,32 @@ exports[`App App 2`] = `
   </li>
 </ul>
 `;
+
+exports[`App App with errors 1`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <h3
+      class="title"
+    >
+      Please search for a Github User:
+    </h3>
+    <input
+      class="input"
+      data-testid="search-input"
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`App App with errors 2`] = `
+<p
+  class="error"
+  data-testid="user-results-error"
+>
+  Something went wrong, please try again!
+</p>
+`;
