@@ -22,63 +22,67 @@ exports[`ActivityHistory displays the activities with the contributions 1`] = `
           progit2
         </a>
       </p>
-      <p>
-        Commit History Dates:
-      </p>
-      <ul
-        class="commitsWrapper"
+      <div
+        class="wrapper"
       >
-        <li
-          class="commitTime"
+        <p>
+          Commit History Dates:
+        </p>
+        <ul
+          class="commitsWrapper"
         >
-          <a
-            href="https://github.com/ben?tab=overview&from=2019-06-01&to=2019-06-30"
-            target="_blank"
+          <li
+            class="commitTime"
           >
-            Wed Jun 19 2019
-          </a>
-        </li>
-        <li
-          class="commitTime"
-        >
-          <a
-            href="https://github.com/ben?tab=overview&from=2019-06-01&to=2019-06-30"
-            target="_blank"
+            <a
+              href="https://github.com/ben?tab=overview&from=2019-06-01&to=2019-06-30"
+              target="_blank"
+            >
+              Wed Jun 19 2019
+            </a>
+          </li>
+          <li
+            class="commitTime"
           >
-            Fri Jun 14 2019
-          </a>
-        </li>
-        <li
-          class="commitTime"
-        >
-          <a
-            href="https://github.com/ben?tab=overview&from=2019-06-01&to=2019-06-30"
-            target="_blank"
+            <a
+              href="https://github.com/ben?tab=overview&from=2019-06-01&to=2019-06-30"
+              target="_blank"
+            >
+              Fri Jun 14 2019
+            </a>
+          </li>
+          <li
+            class="commitTime"
           >
-            Sun Jun 02 2019
-          </a>
-        </li>
-        <li
-          class="commitTime"
-        >
-          <a
-            href="https://github.com/ben?tab=overview&from=2019-06-01&to=2019-06-30"
-            target="_blank"
+            <a
+              href="https://github.com/ben?tab=overview&from=2019-06-01&to=2019-06-30"
+              target="_blank"
+            >
+              Sun Jun 02 2019
+            </a>
+          </li>
+          <li
+            class="commitTime"
           >
-            Sat Jun 01 2019
-          </a>
-        </li>
-        <li
-          class="commitTime"
-        >
-          <a
-            href="https://github.com/ben?tab=overview&from=2019-05-01&to=2019-05-31"
-            target="_blank"
+            <a
+              href="https://github.com/ben?tab=overview&from=2019-06-01&to=2019-06-30"
+              target="_blank"
+            >
+              Sat Jun 01 2019
+            </a>
+          </li>
+          <li
+            class="commitTime"
           >
-            Mon May 13 2019
-          </a>
-        </li>
-      </ul>
+            <a
+              href="https://github.com/ben?tab=overview&from=2019-05-01&to=2019-05-31"
+              target="_blank"
+            >
+              Mon May 13 2019
+            </a>
+          </li>
+        </ul>
+      </div>
     </li>
     <li
       class="repo"
@@ -92,63 +96,67 @@ exports[`ActivityHistory displays the activities with the contributions 1`] = `
           progit2-bg
         </a>
       </p>
-      <p>
-        Commit History Dates:
-      </p>
-      <ul
-        class="commitsWrapper"
+      <div
+        class="wrapper"
       >
-        <li
-          class="commitTime"
+        <p>
+          Commit History Dates:
+        </p>
+        <ul
+          class="commitsWrapper"
         >
-          <a
-            href="https://github.com/ben?tab=overview&from=2019-05-01&to=2019-05-31"
-            target="_blank"
+          <li
+            class="commitTime"
           >
-            Mon May 13 2019
-          </a>
-        </li>
-        <li
-          class="commitTime"
-        >
-          <a
-            href="https://github.com/ben?tab=overview&from=2019-04-01&to=2019-04-30"
-            target="_blank"
+            <a
+              href="https://github.com/ben?tab=overview&from=2019-05-01&to=2019-05-31"
+              target="_blank"
+            >
+              Mon May 13 2019
+            </a>
+          </li>
+          <li
+            class="commitTime"
           >
-            Mon Apr 15 2019
-          </a>
-        </li>
-        <li
-          class="commitTime"
-        >
-          <a
-            href="https://github.com/ben?tab=overview&from=2019-04-01&to=2019-04-30"
-            target="_blank"
+            <a
+              href="https://github.com/ben?tab=overview&from=2019-04-01&to=2019-04-30"
+              target="_blank"
+            >
+              Mon Apr 15 2019
+            </a>
+          </li>
+          <li
+            class="commitTime"
           >
-            Wed Apr 10 2019
-          </a>
-        </li>
-        <li
-          class="commitTime"
-        >
-          <a
-            href="https://github.com/ben?tab=overview&from=2019-04-01&to=2019-04-30"
-            target="_blank"
+            <a
+              href="https://github.com/ben?tab=overview&from=2019-04-01&to=2019-04-30"
+              target="_blank"
+            >
+              Wed Apr 10 2019
+            </a>
+          </li>
+          <li
+            class="commitTime"
           >
-            Thu Apr 04 2019
-          </a>
-        </li>
-        <li
-          class="commitTime"
-        >
-          <a
-            href="https://github.com/ben?tab=overview&from=2019-03-01&to=2019-03-31"
-            target="_blank"
+            <a
+              href="https://github.com/ben?tab=overview&from=2019-04-01&to=2019-04-30"
+              target="_blank"
+            >
+              Thu Apr 04 2019
+            </a>
+          </li>
+          <li
+            class="commitTime"
           >
-            Sat Mar 30 2019
-          </a>
-        </li>
-      </ul>
+            <a
+              href="https://github.com/ben?tab=overview&from=2019-03-01&to=2019-03-31"
+              target="_blank"
+            >
+              Sat Mar 30 2019
+            </a>
+          </li>
+        </ul>
+      </div>
     </li>
     <li
       class="repo"
@@ -162,63 +170,67 @@ exports[`ActivityHistory displays the activities with the contributions 1`] = `
           ben.github.com
         </a>
       </p>
-      <p>
-        Commit History Dates:
-      </p>
-      <ul
-        class="commitsWrapper"
+      <div
+        class="wrapper"
       >
-        <li
-          class="commitTime"
+        <p>
+          Commit History Dates:
+        </p>
+        <ul
+          class="commitsWrapper"
         >
-          <a
-            href="https://github.com/ben?tab=overview&from=2019-03-01&to=2019-03-31"
-            target="_blank"
+          <li
+            class="commitTime"
           >
-            Mon Mar 11 2019
-          </a>
-        </li>
-        <li
-          class="commitTime"
-        >
-          <a
-            href="https://github.com/ben?tab=overview&from=2019-03-01&to=2019-03-31"
-            target="_blank"
+            <a
+              href="https://github.com/ben?tab=overview&from=2019-03-01&to=2019-03-31"
+              target="_blank"
+            >
+              Mon Mar 11 2019
+            </a>
+          </li>
+          <li
+            class="commitTime"
           >
-            Sun Mar 10 2019
-          </a>
-        </li>
-        <li
-          class="commitTime"
-        >
-          <a
-            href="https://github.com/ben?tab=overview&from=2019-03-01&to=2019-03-31"
-            target="_blank"
+            <a
+              href="https://github.com/ben?tab=overview&from=2019-03-01&to=2019-03-31"
+              target="_blank"
+            >
+              Sun Mar 10 2019
+            </a>
+          </li>
+          <li
+            class="commitTime"
           >
-            Sat Mar 09 2019
-          </a>
-        </li>
-        <li
-          class="commitTime"
-        >
-          <a
-            href="https://github.com/ben?tab=overview&from=2019-02-01&to=2019-02-28"
-            target="_blank"
+            <a
+              href="https://github.com/ben?tab=overview&from=2019-03-01&to=2019-03-31"
+              target="_blank"
+            >
+              Sat Mar 09 2019
+            </a>
+          </li>
+          <li
+            class="commitTime"
           >
-            Thu Feb 21 2019
-          </a>
-        </li>
-        <li
-          class="commitTime"
-        >
-          <a
-            href="https://github.com/ben?tab=overview&from=2018-12-01&to=2018-12-31"
-            target="_blank"
+            <a
+              href="https://github.com/ben?tab=overview&from=2019-02-01&to=2019-02-28"
+              target="_blank"
+            >
+              Thu Feb 21 2019
+            </a>
+          </li>
+          <li
+            class="commitTime"
           >
-            Wed Dec 12 2018
-          </a>
-        </li>
-      </ul>
+            <a
+              href="https://github.com/ben?tab=overview&from=2018-12-01&to=2018-12-31"
+              target="_blank"
+            >
+              Wed Dec 12 2018
+            </a>
+          </li>
+        </ul>
+      </div>
     </li>
   </ul>
 </div>

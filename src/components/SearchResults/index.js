@@ -42,7 +42,7 @@ export const SearchResults = ({results}) => {
               {userActivity[login] && (
                 <ActivityHistory
                   username={login}
-                  activity={userActivity[login]}
+                  activities={userActivity[login]}
                 />
               )}
             </>

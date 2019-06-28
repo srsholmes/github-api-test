@@ -13,7 +13,7 @@ describe('SearchResults', () => {
     const {container} = render(<SearchResults results={[]} />);
     expect(container).toMatchSnapshot();
   });
-
+  
   it('Results have the Get User Activity button', () => {
     const {container} = render(<SearchResults results={MOCK_RESULTS} />);
     const [button] = getAllByTestId(container, 'test-get-activity');
